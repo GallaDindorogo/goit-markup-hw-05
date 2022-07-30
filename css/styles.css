@@ -126,7 +126,7 @@ body {
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	color: var(--primery-text-color);
-	transition: var(--transithion-duration-function);
+	transition: color var(--transithion-duration-function);
 }
 
 .menu-link:not(:last-child),
@@ -444,7 +444,7 @@ body {
 	font-style: normal;
 	line-height: 1.71;
 	color: rgba(255, 255, 255, 0.6);
-	transition: var(--transithion-duration-function);
+	transition: color var(--transithion-duration-function);
 }
 
 .adress-link:hover,
@@ -488,7 +488,7 @@ body {
 	align-content: center;
 	justify-content: center;
 	fill: var(--third-text-color);
-	transition: background var(--transithion-duration-function);
+	transition: background-color var(--transithion-duration-function);
 }
 
 .social-item {
@@ -543,7 +543,8 @@ body {
 	letter-spacing: 0.03em;
 	background: var(--third-backgraund-color);
 	border-radius: 4px;
-	transition: background var(--transithion-duration-function), color var(--transithion-duration-function);
+	transition: background var(--transithion-duration-function), color var(--transithion-duration-function),
+		box-shadow var(--transithion-duration-function);
 }
 
 .portfolio-btn:hover,
@@ -586,9 +587,8 @@ body {
 
 .portfolio-link {
 	display: block;
-
-	max-width: 100%;
 	background-color: var(--primery-backgraund-color);
+	transition: box-shadow var(--transithion-duration-function);
 }
 
 .portfolio-link:hover,
